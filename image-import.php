@@ -1,9 +1,26 @@
 <?php
-/**
-* Template Name: Aws Page
-*
-*/
-get_header();
+/** To get json string of all posts images with ID and post name **/
+
+$query_images_args = array(
+    'post_type'      => 'post',
+    'post_status'    => 'publish',
+    'posts_per_page' => - 1,
+);
+
+$query_images = new WP_Query( $query_images_args );
+
+$images = array();
+foreach ( $query_images->posts as $image ) {
+            $tmp = array();
+            $tmp['url'] = get_the_post_thumbnail_url($image->ID);
+            $tmp['title'] = $image->post_name;
+            $images[$image->ID] = $tmp; 
+}
+print_r(json_encode($images));
+
+
+/** copy this string and ready  to insert the images on another site **/
+
 
 // $query_images_args = array(
 //     'post_type'      => 'post',
