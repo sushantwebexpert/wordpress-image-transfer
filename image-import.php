@@ -21,186 +21,79 @@ print_r(json_encode($images));
 
 /** copy this string and ready  to insert the images on another site **/
 
+//// ON ANOTHER SITE ////
 
-// $query_images_args = array(
-//     'post_type'      => 'post',
-//     'post_status'    => 'publish',
-//     'posts_per_page' => - 1,
-// );
+/* the string copied from the old site */
+$json = '{"6740":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2020\/12\/a4c4174e-cb31-4e93-84d3-e3d34633bd0c.jpg","title":"financial-insecurity-has-a-significant-worsening-effect-on-mental-health"},"6724":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2020\/11\/Financial-inclusion.png","title":"fintechs-the-answer-to-financial-inclusion"},"6710":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2020\/10\/ANT-Group.jpeg","title":"ant-group-facts-and-supporting-data"},"6700":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2020\/10\/1.Cryptocurrency-bitcoin.png","title":"an-introduction-to-the-worlds-most-used-cryptocurrency-bitcoin"},"6669":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2020\/06\/Digital-Challenger-Banks-Penser-Feature-Image.jpg","title":"challenging-the-challengers-the-second-wave-of-digital-challenger-banks"},"6667":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2019\/08\/THE-PENSER-FINTECH-NEWS-ROUNDUP.png","title":"the-penser-fintech-news-roundup-june-01-15"},"6662":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2020\/06\/401-e1591885859319.jpg","title":"lets-talk-about-the-challenges-with-widespread-crypto-adoption"},"6659":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2019\/08\/THE-PENSER-FINTECH-NEWS-ROUNDUP.png","title":"the-penser-fintech-news-roundup-may-16-31"},"6648":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2020\/05\/Fintech-in-Brazil-e1589897565169.jpg","title":"fintech-in-latin-america-brazils-biggest-fintechs"},"6645":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2019\/08\/THE-PENSER-FINTECH-NEWS-ROUNDUP.png","title":"the-penser-fintech-news-roundup-may-01-15"},"6640":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2020\/05\/MA-Feature-Images.png","title":"chinese-tech-giant-tencent-invests-in-australian-fintech-afterpay"},"6632":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2020\/05\/eric-prouzet-TZB-1vfImhY-unsplash-e1588708875814.jpg","title":"the-impact-of-covid-19-on-international-remittances"},"6621":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2020\/05\/Penser-feature-image-e1588707612239.jpg","title":"exploring-p2p-payment-apps-in-southeast-asia"},"6615":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2020\/05\/featured-MA-Facebook-Silver-Lake-Jio.jpg","title":"facebook-silver-lake-invest-in-reliance-jio"},"6610":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2019\/08\/THE-PENSER-FINTECH-NEWS-ROUNDUP.png","title":"the-penser-fintech-news-roundup-april-16-30-2"},"6603":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2020\/04\/Penser-The-Future-of-Card-Payments-e1588183028642.jpg","title":"the-future-of-card-payments"},"6593":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2020\/04\/featured-turnaround-1.jpg","title":"5-turnaround-elements-to-restructuring-a-distressed-business"},"6452":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2020\/04\/Penser-Mobile-Wallets-Feature-Image-e1587372345229.jpg","title":"apacmobilewallets"},"6597":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2020\/04\/Managing-a-distressed-fintech-business-e1588002036783.jpg","title":"5-useful-tips-for-managing-a-distressed-fintech-business"},"6551":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2020\/04\/Stripe-Feature-Image-Penser.png","title":"stripe-reaching-a-35-billion-valuation-in-ten-years"},"6355":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2020\/04\/featured-cryptocrime.jpg","title":"cryptocurrency-crime-the-key-takeaways-from-the-chainalysis-2020-crypto-crime-report"},"6220":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2019\/08\/THE-PENSER-FINTECH-NEWS-ROUNDUP.png","title":"the-penser-fintech-news-roundup-april-01-15-2"},"6238":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2020\/04\/featured-fintech-consulting-1.jpg","title":"why-you-need-a-specialized-fintech-and-payments-consultant"},"6092":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2020\/03\/Fintech-in-Africa-Feature-Image-Penser.png","title":"exploring-africas-emerging-fintech-regional-markets"},"6087":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2020\/04\/SoFi-acquires-Galileo-Feature-Image-Penser.png","title":"ma-deal-of-the-week-sofi-acquires-galileo"},"6060":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2020\/04\/matthew-kwong-rQRKEu9HnZo-unsplash-e1586435767589.jpg","title":"the-phenomenal-success-of-indias-mobile-payments-system"},"6039":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2020\/04\/featured-cross-border-fintech.jpg","title":"the-evolution-of-cross-border-payments-with-fintech"},"6051":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2020\/04\/featured-regtech-1.jpg","title":"regtech-what-it-is-and-why-it-matters"},"6028":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2020\/04\/featured-remote-working-fintech.jpg","title":"the-distributed-fintechs-remote-working-stack"},"6024":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2020\/04\/arts-build-close-up-commerce-273230-e1585911147350.jpg","title":"business-continuity-plans-what-they-are-and-why-you-need-one"},"6049":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2019\/08\/THE-PENSER-FINTECH-NEWS-ROUNDUP.png","title":"the-penser-fintech-news-roundup-march-16-31"},"6016":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2020\/03\/Fintech-in-Africa-Feature-Image-Penser.png","title":"why-africa-is-a-budding-global-fintech-hub"},"6004":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2020\/03\/launchpresso-h5iazR-wljU-unsplash-e1585167017150.jpg","title":"8-important-blockchain-initiatives-you-need-to-know-about"},"5994":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2020\/03\/rtyuiop.jpg","title":"digital-id-verification-in-open-banking"},"5985":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2020\/03\/featured-dd-for-baas.jpg","title":"due-diligence-in-banking-as-a-service-platforms"},"5970":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2020\/03\/Nets-Acquires-PeP-1.png","title":"ma-deal-of-the-week-nets-acquires-pep"},"5978":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2020\/03\/shahadat-rahman-O2MdroNurVw-unsplash-e1584889994106.jpg","title":"the-value-of-robotic-process-automation-in-fintech"},"5954":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2020\/03\/working-macbook-computer-keyboard-34577-e1584391037802.jpg","title":"exploring-payments-as-a-service"},"5968":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2019\/08\/THE-PENSER-FINTECH-NEWS-ROUNDUP.png","title":"the-penser-fintech-news-roundup-march-01-15"},"5960":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2020\/03\/featured-MA-Refinitiv-Scivantage.jpg","title":"ma-deal-of-the-week-refinitiv-acquires-scivantage"},"5950":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2020\/03\/patrick-tomasso-nWvWBV0sv04-unsplash-e1584389851263.jpg","title":"analysing-squares-foray-into-crypto-payments"},"5964":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2020\/03\/featured-due-dilgence-fintech.jpg","title":"due-diligence-in-fintech-preparing-for-the-future"},"5945":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2020\/03\/numbers-money-calculating-calculation-3305-e1583915436452.jpg","title":"top-5-emerging-b2b-payment-trends"},"5936":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2020\/03\/featured-what-fintech-customers-want.jpg","title":"what-the-customer-wants-a-fintech-consulting-perspective"},"5923":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2020\/03\/emile-perron-xrVDYZRGdw4-unsplash.jpg","title":"building-a-strong-base-best-fintech-backend-platforms"},"5915":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2020\/03\/Fiserv-acquires-MPX.png","title":"ma-deal-of-the-week-fiserv-acquires-merchantpro-express"},"5909":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2020\/03\/featured-rise-fintech-unicorn-2.jpg","title":"the-rise-of-fintech-unicorns-part-2-understanding-how-to-value-a-fintech-company"},"5905":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2020\/03\/featured-square-revenue-innovations.jpg","title":"square-revenue-vs-innovations"},"5902":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2019\/08\/THE-PENSER-FINTECH-NEWS-ROUNDUP.png","title":"the-penser-fintech-news-roundup-february-16-29"},"5878":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2020\/02\/featured-MA-Intuit-CreditKarma-7.1B.jpg","title":"ma-deal-of-the-week-intuit-acquires-credit-karma"},"5883":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2020\/02\/featured-rise-fintech-unicorn-1.jpg","title":"the-rise-of-fintech-unicorns-part-1-valuing-a-finance-business"},"5861":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2020\/02\/featured-MA-Square-Dessa.jpg","title":"ma-deal-of-the-week-square-acquires-dessa"},"5856":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2020\/02\/featured-t2-t2s-consolidation.jpg","title":"t2-t2s-consolidation-what-is-it-and-why-does-it-matter"},"5851":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2020\/02\/featured-pedd-checklist.jpg","title":"6-important-questions-to-ask-during-private-equity-due-diligence-a-pdf-checklist"},"5849":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2019\/08\/THE-PENSER-FINTECH-NEWS-ROUNDUP.png","title":"the-penser-fintech-news-roundup-february-01-15"},"5833":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2020\/02\/featured-cybersecurity-2.jpg","title":"the-new-frontier-of-cybersecurity-and-the-start-ups-making-an-impact"},"5825":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2020\/02\/featured-bitcoin-payments.jpg","title":"a-look-at-bitcoin-in-payments-and-what-the-lightning-network-could-mean-for-its-future"},"5840":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2020\/02\/Klarna-acquires-Moneymour-feature-image-Penser-e1581931817264.png","title":"ma-deal-of-the-week-klarna-acquires-moneymour"},"5845":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2020\/02\/charles-postiaux-Q6UehpkBSnQ-unsplash-e1581934666259.jpg","title":"brexit-fintech-what-can-we-expect"},"5788":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2020\/02\/patrick-tomasso-nWvWBV0sv04-unsplash-e1581325562501.jpg","title":"a-tale-of-three-pos-companies-square-ingenico-and-verifone"},"5796":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2020\/02\/featured-cybersecurity-1.jpg","title":"an-introduction-to-cybersecurity-in-fintech-and-the-role-of-the-pci-dss"},"5780":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2020\/02\/featured-MA-Worldine-Ingenico-8.6B.jpg","title":"ma-deal-of-the-week-worldline-acquires-ingenico"},"5774":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2020\/02\/featured-IPO-SBI-cards.jpg","title":"sbi-cards-pre-ipo-analysis"},"5756":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2020\/02\/gilles-lambert-pb_lF8VWaPU-unsplash.jpg","title":"how-digital-id-verification-is-gaining-momentum-in-emerging-fintech-markets"},"5765":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2019\/08\/THE-PENSER-FINTECH-NEWS-ROUNDUP.png","title":"the-penser-fintech-news-roundup-january-16-31"},"5743":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2020\/01\/featured-uk-challenger-fintechs.jpg","title":"penser-compares-uk-challenger-fintechs"},"5759":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2020\/02\/Visa-Acquires-Plaid-Penser-feature-image-1.png","title":"ma-deal-of-the-week-wex-acquires-enett-and-optal"},"5734":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2020\/01\/featured-vcdd-checklist.jpg","title":"a-due-diligence-checklist-for-venture-capital-investors"},"5728":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2020\/01\/featured-tdd-checklist.jpg","title":"technical-due-diligence-a-checklist-pdf"},"5750":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2020\/01\/featured-big-fintech.jpg","title":"penser-compares-big-fintechs"},"5701":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2020\/01\/The-Rise-of-Real-Time-Payments-1.png","title":"moving-money-around-the-rise-of-real-time-payments"},"5670":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2020\/01\/featured-MA-PayU-PaySense-200M-2.jpg","title":"ma-deal-of-the-week-payu-acquires-paysense"},"5685":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2020\/01\/FINTECH-IN-ASIA_-HONG-KONG-1.png","title":"penser-fintech-in-the-middle-east"},"5656":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2020\/01\/featured-5-dd-fails.jpg","title":"when-due-diligence-fails-5-examples-where-gaps-were-overlooked-during-acquisitions"},"5678":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2020\/01\/featured-blockchain-banking-primer.jpg","title":"blockchain-in-banking-a-primer"},"5645":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2020\/01\/FINTECH-IN-ASIA_-HONG-KONG.png","title":"the-rise-of-fintech-in-the-middle-east"},"5632":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2020\/01\/featured-cdd-checklist.jpg","title":"commercial-due-diligence-a-simple-checklist-pdf"},"5617":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2020\/01\/featured-alt-credit-score-3.jpg","title":"credit-scoring-the-unbanked-alternative-solutions-used-in-global-markets"},"5641":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2019\/08\/THE-PENSER-FINTECH-NEWS-ROUNDUP.png","title":"the-penser-fintech-news-roundup-jan-01-15"},"5609":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2020\/01\/Visa-Acquires-Plaid-Penser-feature-image-1-e1580371300748.png","title":"ma-of-the-week-visa-acquires-plaid"},"5637":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2020\/01\/katie-harp-QqAkoMIN5Jk-unsplash-e1579514244824.jpg","title":"lets-talk-about-due-diligence-private-equity-investments"},"5600":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2020\/01\/featured-MA-PayPal-Honey-4B-2.jpg","title":"ma-news-of-the-week-paypal-honey"},"5595":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2019\/08\/THE-PENSER-FINTECH-NEWS-ROUNDUP.png","title":"the-penser-fintech-news-roundup-december-16-31"},"5586":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2019\/12\/christine-roy-ir5MHI6rPg0-unsplash-1.jpg","title":"evaluating-fintechs-performance-in-h2-2019"},"5584":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2019\/08\/THE-PENSER-FINTECH-NEWS-ROUNDUP.png","title":"the-penser-fintech-news-roundup-december-01-15"},"5545":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2019\/12\/Fintech-Unicorns-V3-4-1-e1576526144312.png","title":"year-in-review-2019s-fintech-unicorns"},"5540":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2019\/12\/featured-what-is-vdd.jpg","title":"what-is-vendor-due-diligence-and-why-does-it-matter"},"5536":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2019\/12\/thomas-drouault-IBUcu_9vXJc-unsplash-e1576084813594.jpg","title":"lets-talk-about-due-diligence-venture-capital-investments"},"5520":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2019\/12\/featured-5-questions-cdd.jpg","title":"5-questions-to-ask-during-commercial-due-diligence"},"5524":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2019\/08\/THE-PENSER-FINTECH-NEWS-ROUNDUP.png","title":"the-penser-fintech-news-roundup-november-16-30"},"5488":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2019\/11\/ios12-3-iphone-xs-wallet-apple-cash-card-info-social-card-1.jpg","title":"apple-cash-launched"},"5480":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2019\/11\/neonbrand-I6wCDYW6ij8-unsplash-1.png","title":"facebooks-foray-into-payments"},"5463":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2019\/11\/matthew-kwong-rQRKEu9HnZo-unsplash-e1575827429722.jpg","title":"mapping-the-changing-payments-landscape"},"5493":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2019\/09\/featured-credit-score-1.jpg","title":"credit-scores-its-growing-impact-and-the-rise-of-fintech-startups"},"5457":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2019\/11\/vlad-hilitanu-1FI2QAYPa-Y-unsplash-e1575827061384.jpg","title":"five-reasons-why-banks-should-adopt-agile-product-development"},"5450":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2019\/08\/THE-PENSER-FINTECH-NEWS-ROUNDUP.png","title":"the-penser-fintech-news-roundup-november-01-15"},"5445":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2019\/11\/Penser-Presents_-1.png","title":"penser-presents-swiss-payment-forum"},"5433":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2019\/08\/THE-PENSER-FINTECH-NEWS-ROUNDUP.png","title":"october-news-roundup"},"5346":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2019\/10\/Penser-Rise-in-Global-Payments-MA.jpg","title":"globalpaymentsma"},"5328":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2019\/10\/digital-challenger-banks-freelancers-and-self-employed-feature-image-e1571647758785.png","title":"a-comparison-of-digital-challenger-banks-for-freelancers-self-employed"},"5317":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2019\/10\/featured-pisp-challenges.jpg","title":"the-challenges-for-pisps-and-the-capabilities-they-need-to-succeed"},"5325":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2019\/08\/THE-PENSER-FINTECH-NEWS-ROUNDUP.png","title":"the-penser-fintech-news-roundup-october-01-15"},"5274":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2019\/10\/Penser-Mobile-Only-Challenger-Banks-2019_final-1-e1571309649808.png","title":"a-comparison-of-european-mobile-only-challenger-banks-updated-for-2019"},"5280":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2019\/10\/51562.jpg","title":"building-a-digital-bank-five-crucial-pitfalls-to-avoid"},"5271":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2019\/06\/The-Libra-Association.jpg","title":"why-is-facebooks-libra-facing-global-criticism"},"5268":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2019\/10\/featured-online-payments-challenges.jpg","title":"the-challenges-with-online-payments"},"5264":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2019\/06\/featured-10-questions-tdd.jpg","title":"8-questions-to-ask-during-technical-due-diligence"},"5258":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2019\/08\/THE-PENSER-FINTECH-NEWS-ROUNDUP.png","title":"penser-fintech-news-september"},"5252":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2019\/09\/OKBX0D0.jpg","title":"penser-open-banking-challenges"},"5246":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2019\/09\/penser-fintech-due-diligence-mistakes.jpg","title":"a-guide-to-common-fintech-due-diligence-mistakes-and-how-to-avoid-them"},"5244":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2019\/08\/THE-PENSER-FINTECH-NEWS-ROUNDUP.png","title":"the-penser-fintech-news-roundup-september-01-15"},"5305":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2019\/10\/featured-top-10-remittance.jpg","title":"the-top-10-remittance-destinations-for-the-uk-france-and-germany"},"5227":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2019\/09\/401.jpg","title":"changing-the-cryptocurrency-game-libra-gram-more"},"5225":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2019\/08\/THE-PENSER-FINTECH-NEWS-ROUNDUP.png","title":"the-penser-fintech-news-roundup-august-16-31"},"5212":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2019\/08\/19718.jpg","title":"how-did-fintech-do-in-the-first-half-of-2019"},"5206":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2019\/08\/Apple-Card-available-today-card-on-iPhoneXs-screen-082019.jpg","title":"the-apple-card-the-newest-player-on-the-block"},"5190":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2019\/08\/59888.jpg","title":"innovation-in-digital-banks-a-global-snapshot"},"5203":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2019\/08\/THE-PENSER-FINTECH-NEWS-ROUNDUP.png","title":"the-penser-fintech-news-roundup-august-01-15"},"5199":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2019\/08\/featured-UK-confirmation-of-payee.jpg","title":"confirmation-of-payee-in-the-uk-now-has-a-2020-deadline"},"5183":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2019\/08\/featured-AUS-open-banking.jpg","title":"australia-starts-open-banking"},"5177":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2019\/08\/featured-challenger-banks-value-per-customer.jpg","title":"digital-bank-value-per-customer"},"5175":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2019\/08\/THE-PENSER-FINTECH-NEWS-ROUNDUP.png","title":"the-penser-fintech-news-roundup-july-16-july-31"},"5159":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2019\/07\/45101.jpg","title":"the-art-science-of-payment-processing-for-online-marketplaces"},"5146":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2019\/08\/THE-PENSER-FINTECH-NEWS-ROUNDUP.png","title":"penser-fintech-roundup-july"},"5117":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2019\/07\/Open-banking-Penser-Feature-Image-e1562771613745.png","title":"open-banking-across-the-globe"},"5100":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2019\/07\/featured-cryptowallets-1.jpg","title":"so-you-want-to-know-about-cryptowallets"},"5088":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2019\/08\/THE-PENSER-FINTECH-NEWS-ROUNDUP.png","title":"the-penser-fintech-news-roundup-june-16-june-30"},"5150":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2019\/07\/featured-digital-banking-engagement-platform-leaders.jpg","title":"digital-banking-engagement-platforms"},"5078":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2019\/06\/featured-digital-transformation-spotlight-hsbc-2.jpg","title":"digital-transformation-spotlight-hsbc"},"5064":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2019\/06\/featured-auto-fintech-1jpg.jpg","title":"when-automotive-meets-financial-technology-the-growth-of-auto-fintech"},"5058":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2019\/06\/Libra-Currency-Feature-Image-Penser-e1560945626846.jpg","title":"is-facebook-reinventing-cryptocurrency-with-libra"},"5049":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2019\/08\/THE-PENSER-FINTECH-NEWS-ROUNDUP.png","title":"the-penser-fintech-news-roundup-june-01-june-15"},"5032":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2019\/06\/FINTECH-IN-ASIA_-INDIA-e1560937205113.png","title":"india-the-next-biggest-fintech-hub"},"5019":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2019\/06\/featured-corporate-cards-go-virtual.jpg","title":"corporate-cards-are-going-virtual"},"4988":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2019\/06\/FINTECH-IN-ASIA_-HONG-KONG-e1559914468438.png","title":"fintech-in-hong-kong"},"4978":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2019\/06\/FINTECH-IN-ASIA_-CHINA-e1559914406471.png","title":"fintech-in-china"},"4953":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2019\/08\/THE-PENSER-FINTECH-NEWS-ROUNDUP.png","title":"the-penser-fintech-news-roundup-may-16-may-31"},"4931":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2019\/05\/featured-online-marketplaces-1.jpg","title":"the-rising-tide-of-online-marketplaces-and-the-opportunities-for-payment-service-providers"},"4922":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2019\/05\/featured-wealthtech.jpg","title":"global-wealthtech-investment-increased-by-4x-in-5-years"},"4916":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2019\/05\/fabian-blank-78637-unsplash.jpg","title":"building-a-digital-bank-the-7-key-ingredients-to-success"},"4899":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2019\/05\/featured-2019-fintech-unicorns.jpg","title":"2019-fintech-unicorns"},"4857":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2019\/05\/Penser-Presents-at-Podim-Conference-2019.png","title":"penser-presents-podim-conference-2019"},"4834":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2019\/05\/featured-customer-onboarding.jpg","title":"customer-onboarding-in-the-uk"},"4824":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2019\/05\/Penser-Due-Diligence.jpg","title":"due-diligence-a-penser-case-study"},"4821":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2019\/08\/THE-PENSER-FINTECH-NEWS-ROUNDUP.png","title":"the-penser-fintech-news-roundup-may-01-may-15"},"4813":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2019\/05\/featured-sca-exemptions.jpg","title":"sca-exemptions"},"4801":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2019\/05\/featured-fintech-sites.jpg","title":"8-fintech-websites-you-need-to-keep-on-your-radar"},"4789":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2019\/05\/featured-sca-introduction.jpg","title":"what-is-strong-customer-authentication"},"5233":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2019\/05\/alexandre-debieve-FO7JIlwjOtU-unsplash.jpg","title":"the-penser-introduction-to-technical-due-diligence-in-fintech"},"4778":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2019\/05\/featured-four-digital-banks-uk.jpg","title":"digital-challenger-banks-in-the-uk-four-key-players"},"4743":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2019\/05\/featured-intro-due-diligence.jpg","title":"introduction-to-commercial-and-technical-due-diligence"},"4738":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2019\/05\/featured-ais-pis-uk-licenses.jpg","title":"ais-and-pis-a-status-update-on-the-licenses-issued-in-the-uk"},"4729":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2019\/08\/THE-PENSER-FINTECH-NEWS-ROUNDUP.png","title":"the-penser-fintech-news-roundup-april-16-30"},"4713":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2019\/04\/featured-personal-finance-apps.jpg","title":"these-5-apps-are-reinventing-personal-finance"},"4699":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2019\/04\/1.jpg","title":"open-banking-in-europe"},"4691":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2019\/08\/THE-PENSER-FINTECH-NEWS-ROUNDUP.png","title":"the-penser-fintech-news-roundup-april-01-15"},"4679":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2019\/04\/network-international.jpg","title":"the-network-international-ipo-understanding-their-rise-to-prominence"},"4669":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2019\/04\/Picture1.jpg","title":"the-key-steps-to-developing-a-successful-digital-transformation-strategy"},"4531":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2019\/04\/Slide2.jpg","title":"these-are-the-fintech-and-digital-banking-books-you-need-to-read"},"4457":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2019\/04\/featured-digital-transformation-spotlight-pnc-2.jpg","title":"digital-transformation-spotlight-pnc"},"4501":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2019\/04\/Slide1.jpg","title":"how-do-large-banks-move-to-a-more-digital-forward-platform"},"4486":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2019\/04\/Slide4.jpg","title":"the-apple-card-changing-the-game-or-simply-joining-in"},"4471":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2019\/04\/Slide3.jpg","title":"smes-in-the-uk-a-primer"},"4329":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2019\/03\/Barclays-Banner-e1558333826881.jpg","title":"digital-transformation-spotlight-barclays"},"4348":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2019\/03\/DBS-Banner.jpg","title":"digital-transformation-spotlight-dbs"},"4384":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2019\/03\/Slide5.jpg","title":"10-things-about-digital-banking-you-may-not-have-known"},"4381":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2019\/03\/Slide6.jpg","title":"digital-banking-a-simple-overview"},"4378":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2019\/03\/Slide4.jpg","title":"penser-presents-fraud-conference-uk"},"4375":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2019\/03\/Slide3.jpg","title":"penser-presents-cloud-expo-europe"},"4372":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2019\/03\/Slide2.jpg","title":"penser-presents-ai-tech-world"},"4369":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2019\/03\/Slide1.jpg","title":"penser-presents-effective-finance-treasury-in-africa"},"3814":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2018\/09\/OpenBankingsnippet-1.png","title":"challenger-banks-survey"},"3787":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2018\/08\/Screen-Shot-2018-08-21-at-9.39.33-PM.png","title":"swift-vs-ripple"},"3733":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2018\/08\/Picture5-2.png","title":"primer-blockchain-banking"},"3706":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2018\/07\/Challenger-banks-preview2.png","title":"mobile-challenger-banks"},"3600":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2018\/01\/blockchain-1.jpg","title":"blockchain-applications-payments-fintech"},"3189":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2017\/09\/News1-1.jpg","title":"penser-speaks-at-payments-international-2017"},"3188":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2017\/09\/News2.png","title":"penser-speaks-at-london-fintech-week-2017"},"3183":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2017\/05\/Info1-2.jpg","title":"mobile-payments-in-asia"},"3182":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2017\/05\/Info2-2.jpg","title":"mobile-wallets-in-india"},"3175":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2016\/12\/News3.png","title":"penser-speaks-at-payments-international-2016"},"3174":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2017\/09\/Artic1.jpg","title":"mobile-payments-still-a-work-in-progress"},"3171":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2016\/09\/Artic2-1.jpg","title":"apple-pay-needs-to-prove-its-actually-better-than-a-physical-wallet-backchannel-com"},"3168":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2016\/07\/Info3-1.jpg","title":"war-of-the-mobile-wallets-july-2016"},"3167":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2016\/06\/Info4-1.jpg","title":"war-of-the-mobile-wallets-june-2016"},"3162":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2017\/09\/News4.png","title":"penser-speaking-at-mobile-world-congress-2016"},"3159":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2017\/09\/News5.png","title":"bbc-money-box-interview-can-we-live-without-cash"},"3158":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2017\/09\/News6.png","title":"bbc-money-box-interviews-penser-on-the-payments-revolution"},"3153":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2015\/10\/Info5-1.jpg","title":"worlds-biggest-money-transfer-markets"},"3152":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2015\/06\/News7.jpg","title":"the-mobile-innovations-awards-2015"},"3146":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2015\/03\/Info6.jpg","title":"apple-pay-by-the-numbers"},"3147":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2015\/04\/Artic3.jpg","title":"carmakers-hunt-for-share-of-the-mobile-wallet-market-ft-com"},"3143":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2015\/03\/Info7-1.jpg","title":"inside-apple-pay-how-apple-pay-works"},"3140":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2017\/09\/Artic4.png","title":"fintech-in-the-billion-dollar-startup-club"},"3137":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2017\/09\/Artic5.jpg","title":"mobile-money-and-the-worlds-unbanked"},"3134":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2017\/09\/Artic6.jpg","title":"how-facebook-plans-to-wrestle-its-way-into-mobile-payments"},"3131":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2017\/09\/Artic7.jpg","title":"how-paypal-will-compete-in-a-world-with-apple-pay"},"3128":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2017\/09\/Artic8.png","title":"amazon-muscles-in-on-store-payments-with-credit-card-reader-financial-times"},"2656":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2014\/09\/Info8.jpg","title":"ipad-point-of-sale-solutions-2014"},"2652":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2017\/07\/Artic9.jpg","title":"how-apple-can-change-the-payments-landscape"},"2650":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2014\/06\/Info9.jpg","title":"demystifying-the-mobile-wallet"},"2647":{"url":"https:\/\/www.penser.co.uk\/wp-content\/uploads\/2014\/03\/Info10.jpg","title":"bluetooth-low-energy-the-future-of-customer-engagement"}}';
 
-// $query_images = new WP_Query( $query_images_args );
+$post_loop = json_decode($json,true);
 
-// // $images = array();
-// foreach ( $query_images->posts as $image ) {
-//     if( 0 == get_post_thumbnail_id( $image->ID ) ){
-//         set_post_thumbnail( $image->ID, 1195 );
-//     }
-// }
+// loop to handel each blog
+foreach( $post_loop as $key => $value ) {
+    $id = pippin_get_ID_by_title($value['title']);
+    ssisls_fnckcik( $value['url'], basename($value['url']), $id);
+    echo $id;
+    echo '<br>';
+}
 
-// print_r($images);
+// function to get ID by post name
+function pippin_get_ID_by_title($post_name) {
+    global $wpdb;
+    $attachment = $wpdb->get_col($wpdb->prepare("SELECT ID FROM $wpdb->posts WHERE post_name='%s';", $post_name ));
+    if($attachment) {
+        return $attachment[0]; 
+    } else {
+        return 0;
+    }
+}
 
+// function to add media file and set the feature images to the post
+ function ssisls_fnckcik( $image_url, $image_name , $post_id ) {
 
-// $arr = array("4568"=>"https://demo.trianglehomez.com/wp-content/uploads/2019/07/Modern-door-Desings-01.jpg","4512"=>"https://demo.trianglehomez.com/wp-content/uploads/2019/07/Praveen_06-copy.jpg","4488"=>"https://demo.trianglehomez.com/wp-content/uploads/2019/07/2000sqft-home-plans.jpg","4207"=>"https://demo.trianglehomez.com/wp-content/uploads/2019/07/shutterstock_393989602.jpg","4422"=>"https://demo.trianglehomez.com/wp-content/uploads/2019/07/lOADING-AND-UNLOADING-RATES-IN-KERALA-Malayalam.jpg","4404"=>"https://demo.trianglehomez.com/wp-content/uploads/2019/07/Autumn-styling.jpg","4293"=>"https://demo.trianglehomez.com/wp-content/uploads/2019/02/pexels-photo-323705.jpeg","3149"=>"https://demo.trianglehomez.com/wp-content/uploads/2018/03/01.jpg","1325"=>"https://demo.trianglehomez.com/wp-content/uploads/2017/12/George-blog.jpg","2018"=>"https://demo.trianglehomez.com/wp-content/uploads/2018/01/Sreepranavam.jpg","3298"=>"https://demo.trianglehomez.com/wp-content/uploads/2018/03/modern-door-designs-for-rooms-6-7669.jpg","4218"=>"https://demo.trianglehomez.com/wp-content/uploads/2018/10/photo-1530545233050-3f0a5d0dd1ac.jpg","4192"=>"https://demo.trianglehomez.com/wp-content/uploads/2018/09/wall-decoration.jpg","4179"=>"https://demo.trianglehomez.com/wp-content/uploads/2018/09/94230537.jpg","4163"=>"https://demo.trianglehomez.com/wp-content/uploads/2018/09/15825752613_e3b4490bc5_b.jpg","4150"=>"https://demo.trianglehomez.com/wp-content/uploads/2018/09/bathroom-2658996_960_720.jpg","4114"=>"https://demo.trianglehomez.com/wp-content/uploads/2018/09/люстра-подсвечник-1-825x549.jpg","4109"=>"https://demo.trianglehomez.com/wp-content/uploads/2018/07/home-natural-light.jpg","4065"=>"https://demo.trianglehomez.com/wp-content/uploads/2018/09/C_Users_user_AppData_Local_Packages_Microsoft.SkypeApp_kzf8qxf38zg5c_LocalState_711402d6-1cea-470c-9ed2-a2ef508ded81.jpg","4061"=>"https://demo.trianglehomez.com/wp-content/uploads/2018/08/418258182_3c49477f94_b.jpg","4052"=>"https://demo.trianglehomez.com/wp-content/uploads/2018/08/dining-room-1158266_960_720.jpg","4047"=>"https://demo.trianglehomez.com/wp-content/uploads/2018/08/151019-F-OG534-703.jpg","4044"=>"https://demo.trianglehomez.com/wp-content/uploads/2018/08/18-monsoon-care-tips-for-your-home_RH_RS_FINAL-lead__1295057829.jpg","4038"=>"https://demo.trianglehomez.com/wp-content/uploads/2018/08/Beautify-home.jpg","4035"=>"https://demo.trianglehomez.com/wp-content/uploads/2018/08/construction-services.jpeg","4006"=>"https://demo.trianglehomez.com/wp-content/uploads/2018/08/Kerala-homes.jpg","3991"=>"https://demo.trianglehomez.com/wp-content/uploads/2018/07/traditional-indian-home-interiors-11.jpg","3965"=>"https://demo.trianglehomez.com/wp-content/uploads/2018/07/affordable-ways-to-build-a-house-copy.jpg","3937"=>"https://demo.trianglehomez.com/wp-content/uploads/2018/06/Important-principles-of-interior-designing-small-size-min.jpg","3887"=>"https://demo.trianglehomez.com/wp-content/uploads/2018/06/How-to-Maintain-a-Swimming-Pool-Image-1080x675.jpeg","3845"=>"https://demo.trianglehomez.com/wp-content/uploads/2018/05/futuristic-bathroom-sink-looking-for-219-lightinthebox-sprinkle-futuristic-color-changing-led-futuristic-bathroom-sink.png-e1528903783671.jpg","3549"=>"https://demo.trianglehomez.com/wp-content/uploads/2018/04/big-copy.jpg","4227"=>"https://demo.trianglehomez.com/wp-content/uploads/2018/11/10-Affordable-Home-Improvements-Ideas-feature-image-1-1024x576-copy.jpg","3372"=>"https://demo.trianglehomez.com/wp-content/uploads/2018/03/6a00e55397a5c2883401b8d0e145c4970c.jpg","3328"=>"https://demo.trianglehomez.com/wp-content/uploads/2018/03/Interior-design-phases.jpg","3120"=>"https://demo.trianglehomez.com/wp-content/uploads/2018/03/tr-home-blog.jpg","3043"=>"https://demo.trianglehomez.com/wp-content/uploads/2018/02/home-and-building-designers.jpg","4306"=>"https://demo.trianglehomez.com/wp-content/uploads/2019/02/security-protection-anti-virus-software-60504.jpeg","2744"=>"https://demo.trianglehomez.com/wp-content/uploads/2018/02/118_03.jpg","3446"=>"https://demo.trianglehomez.com/wp-content/uploads/2018/04/58b7e08d1a00003400f41275.jpeg","3081"=>"https://demo.trianglehomez.com/wp-content/uploads/2018/02/COVER.jpg","2206"=>"https://demo.trianglehomez.com/wp-content/uploads/2018/01/Budget-home-design.png","3096"=>"https://demo.trianglehomez.com/wp-content/uploads/2018/03/MATTERPORT-TO-FLOORPLANNER.jpg","3319"=>"https://demo.trianglehomez.com/wp-content/uploads/2018/03/Case20CX470C.jpg","3420"=>"https://demo.trianglehomez.com/wp-content/uploads/2018/04/8411255_orig.jpg","4262"=>"https://demo.trianglehomez.com/wp-content/uploads/2018/12/pexels-photo-534171.jpeg","3048"=>"https://demo.trianglehomez.com/wp-content/uploads/2018/02/Large.jpg","3058"=>"https://demo.trianglehomez.com/wp-content/uploads/2018/02/images.jpg","4186"=>"https://demo.trianglehomez.com/wp-content/uploads/2018/09/photo-1529250998-f63edc32300c.jpg","3977"=>"https://demo.trianglehomez.com/wp-content/uploads/2018/07/shutterstock_570818761.jpg","3724"=>"https://demo.trianglehomez.com/wp-content/uploads/2018/05/Kerala-Labour-Union-Rates.jpg","3802"=>"https://demo.trianglehomez.com/wp-content/uploads/2018/05/VASTU.jpg","3176"=>"https://demo.trianglehomez.com/wp-content/uploads/2018/03/IMG_7761-5184x3456.jpg","4239"=>"https://demo.trianglehomez.com/wp-content/uploads/2018/12/Flame-Triangle.jpeg","4125"=>"https://demo.trianglehomez.com/wp-content/uploads/2018/09/house-insurance_1.jpg","4013"=>"https://demo.trianglehomez.com/wp-content/uploads/2018/08/VastuShastramm.jpg","3902"=>"https://demo.trianglehomez.com/wp-content/uploads/2018/06/Crockery-Shelf_02.jpg","3183"=>"https://demo.trianglehomez.com/wp-content/uploads/2018/03/manufactured-sand.jpg","2010"=>"https://demo.trianglehomez.com/wp-content/uploads/2018/01/06.jpg","3357"=>"https://demo.trianglehomez.com/wp-content/uploads/2018/03/Designer.jpg","2079"=>"https://demo.trianglehomez.com/wp-content/uploads/2018/01/Sridhar_01.jpg","1625"=>"https://demo.trianglehomez.com/wp-content/uploads/2018/01/13124780_1725918061019352_2788114155418582777_n.jpg","1603"=>"https://demo.trianglehomez.com/wp-content/uploads/2018/01/Grade-of-Concrete.png","1395"=>"https://demo.trianglehomez.com/wp-content/uploads/2018/01/Toilet-01-copy.jpg","3138"=>"https://demo.trianglehomez.com/wp-content/uploads/2018/03/plastering-1.jpg");
+    $upload_dir       = wp_upload_dir(); // Set upload folder
+    $image_data       = file_get_contents($image_url); // Get image data
+    $unique_file_name = wp_unique_filename( $upload_dir['path'], $image_name ); // Generate unique name
+    $filename         = basename( $unique_file_name ); // Create image file name
 
-// print_r($arr);
-// foreach ($arr as $key => $value) {
-//     $r = explode('/',$value);
-//     $image_name =  end($r);
-//     // echo '<br>';
-//     // echo $value;
-//     // echo '<br>';
-//     // echo $key;
-//     // echo '<br>';
-//     // echo $image_name;
+    // Check folder permission and define file location
+    if( wp_mkdir_p( $upload_dir['path'] ) ) {
+        $file = $upload_dir['path'] . '/' . $filename;
+    } else {
+        $file = $upload_dir['basedir'] . '/' . $filename;
+    }
 
-//     // ssisls_fnckcik( $value, 'Praveen_06-copy.jpg', $key );
+    // Create the image  file on the server
+    file_put_contents( $file, $image_data );
 
-// }
+    // Check image file type
+    $wp_filetype = wp_check_filetype( $filename, null );
 
-// $rtt = ssisls_fnckcik('https://demo.trianglehomez.com/wp-content/uploads/2019/07/Praveen_06-copy.jpg', 'Praveen_06-copy.jpg' );
-// print_r($rtt);
+    // Set attachment data
+    $attachment = array(
+        'post_mime_type' => $wp_filetype['type'],
+        'post_title'     => sanitize_file_name( $filename ),
+        'post_content'   => '',
+        'post_status'    => 'inherit'
+    );
 
+    // Create the attachment
+    $attach_id = wp_insert_attachment( $attachment, $file, $post_id );
 
-//  function ssisls_fnckcik( $image_url, $image_name , $post_id ) {
+    // Include image.php
+    require_once(ABSPATH . 'wp-admin/includes/image.php');
 
-//     $upload_dir       = wp_upload_dir(); // Set upload folder
-//     $image_data       = file_get_contents($image_url); // Get image data
-//     $unique_file_name = wp_unique_filename( $upload_dir['path'], $image_name ); // Generate unique name
-//     $filename         = basename( $unique_file_name ); // Create image file name
+    // Define attachment metadata
+    $attach_data = wp_generate_attachment_metadata( $attach_id, $file );
 
-//     // Check folder permission and define file location
-//     if( wp_mkdir_p( $upload_dir['path'] ) ) {
-//         $file = $upload_dir['path'] . '/' . $filename;
-//     } else {
-//         $file = $upload_dir['basedir'] . '/' . $filename;
-//     }
+    // Assign metadata to attachment
+    wp_update_attachment_metadata( $attach_id, $attach_data );
 
-//     // Create the image  file on the server
-//     file_put_contents( $file, $image_data );
-
-//     // Check image file type
-//     $wp_filetype = wp_check_filetype( $filename, null );
-
-//     // Set attachment data
-//     $attachment = array(
-//         'post_mime_type' => $wp_filetype['type'],
-//         'post_title'     => sanitize_file_name( $filename ),
-//         'post_content'   => '',
-//         'post_status'    => 'inherit'
-//     );
-
-//     // Create the attachment
-//     $attach_id = wp_insert_attachment( $attachment, $file, $post_id );
-
-//     // Include image.php
-//     require_once(ABSPATH . 'wp-admin/includes/image.php');
-
-//     // Define attachment metadata
-//     $attach_data = wp_generate_attachment_metadata( $attach_id, $file );
-
-//     // Assign metadata to attachment
-//     wp_update_attachment_metadata( $attach_id, $attach_data );
-
-//     // And finally assign featured image to post
-//     set_post_thumbnail( $post_id, $attach_id );
-//     return $attach_id;
-//  }
+    // And finally assign featured image to post
+    set_post_thumbnail( $post_id, $attach_id );
+    return $attach_id;
+ }
 
 
-
-
-
-
-
-
-
-
-
-// $rt = app_upload_url_from_url( 'https://demo.trianglehomez.com/wp-content/uploads/2019/07/Praveen_06-copy.jpg', 'Praveen_06-copy.jpg');
-// print_r($rt);
-// function app_upload_url_from_url( $thumb_url, $filename ) {
-
-//         $default_id = 2200;
-
-//          if (empty($thumb_url)){
-//             return $default_id;
-//         }
-
-//             $b64image = base64_encode(file_get_contents($thumb_url));
-//             $upload_dir = wp_upload_dir();
-            
-//             $upload_path = str_replace( '/', DIRECTORY_SEPARATOR, $upload_dir['path'] ) . DIRECTORY_SEPARATOR;
-
-//             $decoded = base64_decode($b64image);
-
-//             $hashed_filename = $filename;
-//             $image_upload = file_put_contents( $upload_path . $hashed_filename, $decoded );
-
-//             //HANDLE UPLOADED FILE
-//             if( !function_exists( 'wp_handle_sideload' ) ) {
-//               require_once( ABSPATH . 'wp-admin/includes/file.php' );
-//             }
-
-//             // Without that I'm getting a debug error!?
-//             if( !function_exists( 'wp_get_current_user' ) ) {
-//               require_once( ABSPATH . 'wp-includes/pluggable.php' );
-//             }
-//             $file             = array();
-//             $file['error']    = '';
-//             $file['tmp_name'] = $upload_path . $hashed_filename;
-//             $file['name']     = $hashed_filename;
-//             $file['type']     = 'image/png';
-//             $file['size']     = filesize( $upload_path . $hashed_filename );
-
-//             // upload file to server
-//             // use $file instead of $image_upload
-//             $file_return = wp_handle_sideload( $file, array( 'test_form' => false ) );
-            
-//             $wp_upload_dir = wp_upload_dir();
-
-//             $filename = $file_return['file'];
-
-//             $attachment = array(
-//                      'post_mime_type' => $file_return['type'],
-//                      'post_title' => preg_replace('/\.[^.]+$/', '', basename($filename)),
-//                      'post_content' => '',
-//                      'post_status' => 'inherit',
-//                      'guid' => $wp_upload_dir['url'] . '/' . basename($filename)
-//                      );
-
-
-//             $attach_id = wp_insert_attachment( $attachment, $filename );
-//             /// generate thumbnails of newly uploaded image
-//             echo 'XX' .  $wp_upload_dir['path'] . '/' . basename( $filename ) . 'YY';
-
-//             $attachment_meta = wp_generate_attachment_metadata( $attach_id,  $wp_upload_dir['path'] . '/' . basename( $filename ) );
-//             echo '11';
-//         if ( is_wp_error($attachment_meta) ) {
-//             print_r($attachment_meta);
-//         }
-//          print_r($attachment_meta);
-
-//             wp_update_attachment_metadata($attach_id,$attachment_meta);
-
-
-//         if ( is_wp_error($attach_id) ) {
-//             return $default_id;
-//         }
-
-//         if(!is_wp_error($attach_id)) {
-//             return $attach_id;
-//         }
-//     }
-
-// // function pippin_get_image_id($image_url) {
-// //     global $wpdb;
-// //     $attachment = $wpdb->get_col($wpdb->prepare("SELECT ID FROM $wpdb->posts WHERE guid='%s';", $image_url ));
-// //     if($attachment) {
-// //         return $attachment[0]; 
-// //     } else {
-// //         return 0;
-// //     }
-// // }
 
 get_footer();
 ?>
